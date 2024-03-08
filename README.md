@@ -27,4 +27,10 @@ In the current project, there is also seeding data included under DataLoader/See
 
 ## Free deployment options
 
-You can easily deploy this application using conditionally free resources like https://somee.com/ and https://www.mongodb.com/atlas/database. 
+You can easily deploy this application using conditionally free resources like https://somee.com/ and https://www.mongodb.com/atlas/database.
+
+## Demo
+
+http://geohelp.somee.com/swagger/index.html
+
+The application is deployed under this url. The deployment is free, therefore it is significantly throttled

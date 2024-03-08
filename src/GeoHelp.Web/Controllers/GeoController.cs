@@ -2,6 +2,7 @@
 using GeoHelp.Core.Entities;
 using GeoHelp.Core.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
 namespace GeoHelp.Controllers
@@ -12,13 +13,16 @@ namespace GeoHelp.Controllers
     {
         private readonly DataContext _dataContext;
         private readonly IGeoEntitySearchService _geoEntitySearchService;
+        private readonly IConfiguration _configuration;
 
         public GeoController(
             DataContext dataContext,
-            IGeoEntitySearchService geoEntitySearchService)
+            IGeoEntitySearchService geoEntitySearchService,
+            IConfiguration configuration)
         {
             _dataContext = dataContext;
             _geoEntitySearchService = geoEntitySearchService;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -28,6 +32,8 @@ namespace GeoHelp.Controllers
             [FromQuery] int take = 10,
             [FromQuery] int skip = 0)
         {
+            ValidateWindowSize(skip, take);
+
             var result = _geoEntitySearchService.Query(
                 _dataContext.Get<Country>().AsQueryable(),
                 skip,
@@ -46,6 +52,8 @@ namespace GeoHelp.Controllers
             [FromQuery] int take = 10,
             [FromQuery] int skip = 0)
         {
+            ValidateWindowSize(skip, take);
+
             var result = _geoEntitySearchService.Query(
                 _dataContext.Get<City>().AsQueryable().Where(c => c.CountryCode == countryCode),
                 skip,
@@ -54,6 +62,14 @@ namespace GeoHelp.Controllers
                 searchTerm ?? string.Empty);
 
             return Ok(result);
+        }
+
+        private void ValidateWindowSize(int _, int take)
+        {
+            if (take > int.Parse(_configuration["MaxTake"]))
+            {
+                throw new ArgumentException("Not supported window size");
+            }
         }
 
         private string[] GetSearchLocales(string? searchLocalesCommaSeparated)
