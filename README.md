@@ -7,7 +7,7 @@ Ones country is selected, cities dropdown enables and values are
 filtered based on selected country.
 
 Recently with my friends I was working on the hobby project, and we figured 
-that it is hard or impossible to find the solution that is fast+free+customizable.
+that it is hard or impossible to find the server provider of this data that is fast+free+customizable.
 However, all data that we need to solve this problem is now available for free.
 Therefore, I quickly made the skeleton that can be used to maintain this task.
 
@@ -23,7 +23,7 @@ In general, this project can be used in the following way:
 2. Result files are taken from /outputs folder and placed under /Seeds of DataSeeder console app. Later, with the connection string specified this app will prepare the collections, data, and indexes to the mongo database specified
 3. Web API application (GeoHelp.Web) can now be launched and linked to the seeded database.
 
-In the current projet, there is also seeding data included. This data is loaded from **Overpass API** with the instructions provided above
+In the current project, there is also seeding data included under DataLoader/Seeding. This data is loaded from **Overpass API** with the instructions provided above
 
 ## Free deployment options
 
