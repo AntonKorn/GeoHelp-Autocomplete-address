@@ -46,7 +46,7 @@ namespace GeoHelp.Controllers
 
         [HttpGet]
         public ActionResult<IEnumerable<City>> Cities(
-            [FromQuery] string countryCode,
+            [FromQuery] string? countryCode,
             [FromQuery] string? searchTerm,
             [FromQuery] string? searchLocalesCommaSeparated,
             [FromQuery] int take = 10,
@@ -54,8 +54,15 @@ namespace GeoHelp.Controllers
         {
             ValidateWindowSize(skip, take);
 
+            var citiesQuery = (IQueryable<City>)_dataContext.Get<City>().AsQueryable();
+
+            if (!string.IsNullOrEmpty(countryCode))
+            {
+                citiesQuery = citiesQuery.Where(c => c.CountryCode == countryCode);
+            }
+
             var result = _geoEntitySearchService.Query(
-                _dataContext.Get<City>().AsQueryable().Where(c => c.CountryCode == countryCode),
+                citiesQuery,
                 skip,
                 take,
                 GetSearchLocales(searchLocalesCommaSeparated),
