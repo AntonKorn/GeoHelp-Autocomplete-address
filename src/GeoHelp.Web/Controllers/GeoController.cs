@@ -108,7 +108,6 @@ namespace GeoHelp.Controllers
         public ActionResult<IEnumerable<Building>> Buildings(
             [FromQuery] string streetId,
             [FromQuery] string? searchTerm,
-            [FromQuery] string? searchLocalesCommaSeparated,
             [FromQuery] int take = 10,
             [FromQuery] int skip = 0)
         {

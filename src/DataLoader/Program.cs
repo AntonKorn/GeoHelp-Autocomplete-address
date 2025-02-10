@@ -116,6 +116,17 @@ using (var scope = services.CreateScope())
                     throw new InvalidOperationException("City id was unset");
                 }
 
+                var streetsOutputPath = $"output/addresses/{countryCode}/{cityElement.Id}-streets.json";
+                var buildingsOutputPath = $"output/addresses/{countryCode}/{cityElement.Id}-buildings.json";
+
+                if (File.Exists(streetsOutputPath)
+                    && File.Exists(buildingsOutputPath)
+                    && !loaderConfiguration.ForceReloadAddresses)
+                {
+                    Console.WriteLine($"Skipped {cityName}, {cityElement.Id}");
+                    continue;
+                }
+
                 Console.WriteLine($"Loading {cityName}, {cityElement.Id}");
 
                 sw.Restart();
