@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,6 +9,410 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
+    <None Remove="Seeds\addresses\BY\1064663883-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1064663883-streets.json" />
+    <None Remove="Seeds\addresses\BY\1127718939-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1127718939-streets.json" />
+    <None Remove="Seeds\addresses\BY\1153145528-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1153145528-streets.json" />
+    <None Remove="Seeds\addresses\BY\119306277-buildings.json" />
+    <None Remove="Seeds\addresses\BY\119306277-streets.json" />
+    <None Remove="Seeds\addresses\BY\119306895-buildings.json" />
+    <None Remove="Seeds\addresses\BY\119306895-streets.json" />
+    <None Remove="Seeds\addresses\BY\119310785-buildings.json" />
+    <None Remove="Seeds\addresses\BY\119310785-streets.json" />
+    <None Remove="Seeds\addresses\BY\119357582-buildings.json" />
+    <None Remove="Seeds\addresses\BY\119357582-streets.json" />
+    <None Remove="Seeds\addresses\BY\130200848-buildings.json" />
+    <None Remove="Seeds\addresses\BY\130200848-streets.json" />
+    <None Remove="Seeds\addresses\BY\130206091-buildings.json" />
+    <None Remove="Seeds\addresses\BY\130206091-streets.json" />
+    <None Remove="Seeds\addresses\BY\1307538250-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1307538250-streets.json" />
+    <None Remove="Seeds\addresses\BY\132174058-buildings.json" />
+    <None Remove="Seeds\addresses\BY\132174058-streets.json" />
+    <None Remove="Seeds\addresses\BY\132246871-buildings.json" />
+    <None Remove="Seeds\addresses\BY\132246871-streets.json" />
+    <None Remove="Seeds\addresses\BY\1580547422-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1580547422-streets.json" />
+    <None Remove="Seeds\addresses\BY\1816928488-buildings.json" />
+    <None Remove="Seeds\addresses\BY\1816928488-streets.json" />
+    <None Remove="Seeds\addresses\BY\193823659-buildings.json" />
+    <None Remove="Seeds\addresses\BY\193823659-streets.json" />
+    <None Remove="Seeds\addresses\BY\193824312-buildings.json" />
+    <None Remove="Seeds\addresses\BY\193824312-streets.json" />
+    <None Remove="Seeds\addresses\BY\2112159789-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2112159789-streets.json" />
+    <None Remove="Seeds\addresses\BY\2115207314-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2115207314-streets.json" />
+    <None Remove="Seeds\addresses\BY\2271196832-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2271196832-streets.json" />
+    <None Remove="Seeds\addresses\BY\2271196833-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2271196833-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978887-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978887-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978889-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978889-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978890-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978890-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978891-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978891-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978892-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978892-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978893-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978893-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978894-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978894-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978895-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978895-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978897-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978897-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978898-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978898-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978899-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978899-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978900-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978900-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978901-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978901-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978903-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978903-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978904-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978904-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978905-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978905-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978906-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978906-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978907-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978907-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978908-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978908-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978909-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978909-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978910-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978910-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978911-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978911-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978912-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978912-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978913-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978913-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978914-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978914-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978916-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978916-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978917-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978917-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978918-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978918-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978919-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978919-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978920-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978920-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978921-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978921-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978923-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978923-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978924-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978924-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978925-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978925-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978926-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978926-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978928-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978928-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978929-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978929-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978930-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978930-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978931-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978931-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978932-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978932-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978934-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978934-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978935-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978935-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978939-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978939-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978941-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978941-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978943-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978943-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978944-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978944-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978945-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978945-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978947-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978947-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978948-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978948-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978949-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978949-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978951-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978951-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978952-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978952-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978953-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978953-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978955-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978955-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978956-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978956-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978959-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978959-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978960-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978960-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978961-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978961-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978964-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978964-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978965-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978965-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978966-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978966-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978967-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978967-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978968-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978968-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978969-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978969-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978970-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978970-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978971-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978971-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978972-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978972-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978973-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978973-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978974-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978974-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978975-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978975-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978977-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978977-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978978-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978978-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978979-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978979-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978980-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978980-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978981-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978981-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978983-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978983-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978984-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978984-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978985-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978985-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978986-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978986-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978987-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978987-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978988-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978988-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978989-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978989-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978990-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978990-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978991-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978991-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978992-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978992-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978993-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978993-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978994-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978994-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978995-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978995-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978996-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978996-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978997-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978997-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978998-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978998-streets.json" />
+    <None Remove="Seeds\addresses\BY\242978999-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242978999-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979000-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979000-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979002-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979002-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979004-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979004-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979005-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979005-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979006-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979006-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979007-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979007-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979010-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979010-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979011-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979011-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979012-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979012-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979013-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979013-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979014-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979014-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979015-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979015-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979016-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979016-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979017-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979017-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979018-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979018-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979019-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979019-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979020-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979020-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979021-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979021-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979022-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979022-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979023-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979023-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979025-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979025-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979026-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979026-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979027-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979027-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979028-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979028-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979029-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979029-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979030-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979030-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979031-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979031-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979032-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979032-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979033-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979033-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979034-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979034-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979035-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979035-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979036-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979036-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979037-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979037-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979039-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979039-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979042-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979042-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979043-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979043-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979044-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979044-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979045-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979045-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979047-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979047-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979051-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979051-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979054-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979054-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979055-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979055-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979056-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979056-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979058-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979058-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979060-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979060-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979064-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979064-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979065-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979065-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979067-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979067-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979068-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979068-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979069-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979069-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979071-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979071-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979074-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979074-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979076-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979076-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979077-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979077-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979080-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979080-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979081-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979081-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979082-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979082-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979083-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979083-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979084-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979084-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979085-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979085-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979086-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979086-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979087-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979087-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979088-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979088-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979089-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979089-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979098-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979098-streets.json" />
+    <None Remove="Seeds\addresses\BY\242979102-buildings.json" />
+    <None Remove="Seeds\addresses\BY\242979102-streets.json" />
+    <None Remove="Seeds\addresses\BY\243010336-buildings.json" />
+    <None Remove="Seeds\addresses\BY\243010336-streets.json" />
+    <None Remove="Seeds\addresses\BY\243015757-buildings.json" />
+    <None Remove="Seeds\addresses\BY\243015757-streets.json" />
+    <None Remove="Seeds\addresses\BY\243017725-buildings.json" />
+    <None Remove="Seeds\addresses\BY\243017725-streets.json" />
+    <None Remove="Seeds\addresses\BY\243043568-buildings.json" />
+    <None Remove="Seeds\addresses\BY\243043568-streets.json" />
+    <None Remove="Seeds\addresses\BY\26151301-buildings.json" />
+    <None Remove="Seeds\addresses\BY\26151301-streets.json" />
+    <None Remove="Seeds\addresses\BY\26162465-buildings.json" />
+    <None Remove="Seeds\addresses\BY\26162465-streets.json" />
+    <None Remove="Seeds\addresses\BY\27171628-buildings.json" />
+    <None Remove="Seeds\addresses\BY\27171628-streets.json" />
+    <None Remove="Seeds\addresses\BY\27251066-buildings.json" />
+    <None Remove="Seeds\addresses\BY\27251066-streets.json" />
+    <None Remove="Seeds\addresses\BY\27253144-buildings.json" />
+    <None Remove="Seeds\addresses\BY\27253144-streets.json" />
+    <None Remove="Seeds\addresses\BY\277491317-buildings.json" />
+    <None Remove="Seeds\addresses\BY\277491317-streets.json" />
+    <None Remove="Seeds\addresses\BY\280028528-buildings.json" />
+    <None Remove="Seeds\addresses\BY\280028528-streets.json" />
+    <None Remove="Seeds\addresses\BY\2903002190-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2903002190-streets.json" />
+    <None Remove="Seeds\addresses\BY\2967480392-buildings.json" />
+    <None Remove="Seeds\addresses\BY\2967480392-streets.json" />
+    <None Remove="Seeds\addresses\BY\3430745677-buildings.json" />
+    <None Remove="Seeds\addresses\BY\3430745677-streets.json" />
+    <None Remove="Seeds\addresses\BY\344174228-buildings.json" />
+    <None Remove="Seeds\addresses\BY\344174228-streets.json" />
+    <None Remove="Seeds\addresses\BY\351282610-buildings.json" />
+    <None Remove="Seeds\addresses\BY\351282610-streets.json" />
+    <None Remove="Seeds\addresses\BY\406025360-buildings.json" />
+    <None Remove="Seeds\addresses\BY\406025360-streets.json" />
+    <None Remove="Seeds\addresses\BY\4230154696-buildings.json" />
+    <None Remove="Seeds\addresses\BY\4230154696-streets.json" />
+    <None Remove="Seeds\addresses\BY\428339511-buildings.json" />
+    <None Remove="Seeds\addresses\BY\428339511-streets.json" />
+    <None Remove="Seeds\addresses\BY\437185596-buildings.json" />
+    <None Remove="Seeds\addresses\BY\437185596-streets.json" />
+    <None Remove="Seeds\addresses\BY\4736396990-buildings.json" />
+    <None Remove="Seeds\addresses\BY\4736396990-streets.json" />
+    <None Remove="Seeds\addresses\BY\496475615-buildings.json" />
+    <None Remove="Seeds\addresses\BY\496475615-streets.json" />
+    <None Remove="Seeds\addresses\BY\8107750282-buildings.json" />
+    <None Remove="Seeds\addresses\BY\8107750282-streets.json" />
+    <None Remove="Seeds\addresses\BY\8107750283-buildings.json" />
+    <None Remove="Seeds\addresses\BY\8107750283-streets.json" />
     <None Remove="Seeds\cities-AD.json" />
     <None Remove="Seeds\cities-AE.json" />
     <None Remove="Seeds\cities-AF.json" />
@@ -233,6 +637,1218 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1064663883-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1064663883-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1127718939-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1127718939-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1153145528-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1153145528-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119306277-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119306277-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119306895-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119306895-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119310785-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119310785-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119357582-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\119357582-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\130200848-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\130200848-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\130206091-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\130206091-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1307538250-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1307538250-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\132174058-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\132174058-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\132246871-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\132246871-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1580547422-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1580547422-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1816928488-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\1816928488-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\193823659-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\193823659-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\193824312-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\193824312-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2112159789-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2112159789-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2115207314-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2115207314-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2271196832-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2271196832-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2271196833-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2271196833-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978887-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978887-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978889-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978889-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978890-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978890-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978891-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978891-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978892-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978892-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978893-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978893-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978894-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978894-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978895-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978895-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978897-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978897-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978898-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978898-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978899-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978899-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978900-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978900-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978901-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978901-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978903-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978903-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978904-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978904-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978905-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978905-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978906-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978906-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978907-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978907-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978908-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978908-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978909-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978909-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978910-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978910-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978911-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978911-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978912-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978912-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978913-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978913-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978914-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978914-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978916-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978916-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978917-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978917-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978918-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978918-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978919-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978919-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978920-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978920-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978921-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978921-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978923-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978923-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978924-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978924-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978925-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978925-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978926-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978926-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978928-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978928-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978929-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978929-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978930-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978930-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978931-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978931-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978932-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978932-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978934-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978934-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978935-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978935-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978939-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978939-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978941-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978941-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978943-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978943-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978944-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978944-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978945-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978945-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978947-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978947-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978948-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978948-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978949-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978949-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978951-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978951-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978952-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978952-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978953-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978953-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978955-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978955-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978956-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978956-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978959-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978959-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978960-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978960-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978961-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978961-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978964-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978964-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978965-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978965-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978966-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978966-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978967-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978967-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978968-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978968-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978969-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978969-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978970-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978970-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978971-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978971-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978972-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978972-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978973-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978973-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978974-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978974-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978975-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978975-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978977-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978977-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978978-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978978-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978979-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978979-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978980-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978980-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978981-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978981-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978983-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978983-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978984-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978984-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978985-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978985-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978986-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978986-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978987-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978987-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978988-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978988-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978989-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978989-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978990-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978990-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978991-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978991-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978992-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978992-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978993-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978993-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978994-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978994-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978995-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978995-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978996-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978996-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978997-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978997-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978998-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978998-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978999-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242978999-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979000-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979000-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979002-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979002-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979004-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979004-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979005-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979005-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979006-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979006-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979007-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979007-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979010-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979010-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979011-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979011-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979012-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979012-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979013-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979013-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979014-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979014-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979015-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979015-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979016-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979016-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979017-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979017-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979018-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979018-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979019-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979019-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979020-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979020-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979021-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979021-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979022-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979022-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979023-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979023-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979025-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979025-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979026-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979026-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979027-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979027-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979028-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979028-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979029-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979029-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979030-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979030-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979031-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979031-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979032-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979032-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979033-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979033-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979034-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979034-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979035-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979035-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979036-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979036-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979037-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979037-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979039-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979039-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979042-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979042-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979043-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979043-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979044-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979044-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979045-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979045-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979047-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979047-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979051-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979051-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979054-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979054-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979055-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979055-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979056-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979056-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979058-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979058-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979060-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979060-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979064-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979064-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979065-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979065-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979067-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979067-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979068-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979068-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979069-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979069-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979071-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979071-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979074-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979074-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979076-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979076-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979077-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979077-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979080-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979080-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979081-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979081-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979082-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979082-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979083-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979083-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979084-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979084-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979085-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979085-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979086-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979086-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979087-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979087-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979088-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979088-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979089-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979089-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979098-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979098-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979102-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\242979102-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243010336-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243010336-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243015757-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243015757-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243017725-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243017725-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243043568-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\243043568-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\26151301-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\26151301-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\26162465-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\26162465-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27171628-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27171628-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27251066-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27251066-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27253144-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\27253144-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\277491317-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\277491317-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\280028528-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\280028528-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2903002190-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2903002190-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2967480392-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\2967480392-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\3430745677-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\3430745677-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\344174228-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\344174228-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\351282610-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\351282610-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\406025360-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\406025360-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\4230154696-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\4230154696-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\428339511-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\428339511-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\437185596-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\437185596-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\4736396990-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\4736396990-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\496475615-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\496475615-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\8107750282-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\8107750282-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\8107750283-buildings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Seeds\addresses\BY\8107750283-streets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Seeds\cities-AD.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -1322,8 +2938,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>

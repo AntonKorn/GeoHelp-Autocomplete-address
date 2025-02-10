@@ -71,6 +71,73 @@ namespace GeoHelp.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        public ActionResult<IEnumerable<Street>> Streets(
+            [FromQuery] string? cityId,
+            [FromQuery] string? countryCode,
+            [FromQuery] string? searchTerm,
+            [FromQuery] string? searchLocalesCommaSeparated,
+            [FromQuery] int take = 10,
+            [FromQuery] int skip = 0)
+        {
+            ValidateWindowSize(skip, take);
+
+            var streetsQuery = (IQueryable<Street>)_dataContext.Get<Street>().AsQueryable();
+
+            if (!string.IsNullOrEmpty(countryCode))
+            {
+                streetsQuery = streetsQuery.Where(c => c.CountryCode == countryCode);
+            }
+
+            if (!string.IsNullOrEmpty(cityId))
+            {
+                streetsQuery = streetsQuery.Where(street => street.CityId == cityId);
+            }
+
+            var result = _geoEntitySearchService.Query(
+                streetsQuery,
+                skip,
+                take,
+                GetSearchLocales(searchLocalesCommaSeparated),
+                searchTerm ?? string.Empty);
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Building>> Buildings(
+            [FromQuery] string streetId,
+            [FromQuery] string? searchTerm,
+            [FromQuery] string? searchLocalesCommaSeparated,
+            [FromQuery] int take = 10,
+            [FromQuery] int skip = 0)
+        {
+            ValidateWindowSize(skip, take);
+
+            ArgumentNullException.ThrowIfNull(streetId, nameof(streetId));
+
+            var buildingsQuery = _dataContext
+                .Get<Building>()
+                .AsQueryable()
+                .Where(building => building.StreetId == streetId);
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                buildingsQuery = buildingsQuery
+                    .Where(building =>
+                        building.HouseNumber != null
+                        && building.HouseNumber.Contains(searchTerm));
+            }
+
+            var result = buildingsQuery
+                .OrderBy(building => building.HouseNumberMainComponent)
+                .ThenBy(building => building.HouseNumber)
+                .Skip(skip)
+                .Take(take);
+
+            return Ok(result);
+        }
+
         private void ValidateWindowSize(int _, int take)
         {
             if (take > int.Parse(_configuration["MaxTake"]))

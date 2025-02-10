@@ -2,7 +2,7 @@
 
 namespace GeoHelp.Core.Entities
 {
-    public class BaseGeoEntity
+    public class BaseAdministrativeGeoEntity
     {
         [BsonId]
         public Guid Id { get; set; }

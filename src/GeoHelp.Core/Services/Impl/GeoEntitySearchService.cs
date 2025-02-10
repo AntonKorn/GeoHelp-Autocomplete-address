@@ -5,8 +5,8 @@ namespace GeoHelp.Core.Services.Impl
 {
     internal class GeoEntitySearchService : IGeoEntitySearchService
     {
-        public IQueryable<BaseGeoEntity> Query(
-            IQueryable<BaseGeoEntity> baseQuery,
+        public IQueryable<BaseAdministrativeGeoEntity> Query(
+            IQueryable<BaseAdministrativeGeoEntity> baseQuery,
             int skip,
             int take,
             string[] searchLocales,
@@ -27,13 +27,15 @@ namespace GeoHelp.Core.Services.Impl
             return resultQuery;
         }
 
-        private Expression<Func<BaseGeoEntity, bool>> GetExpression(string[] nameLocales, string query)
+        private Expression<Func<BaseAdministrativeGeoEntity, bool>> GetExpression(string[] nameLocales, string query)
         {
-            var parameter = Expression.Parameter(typeof(BaseGeoEntity), "x");
+            var parameter = Expression.Parameter(typeof(BaseAdministrativeGeoEntity), "x");
             var containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) })
                 ?? throw new InvalidOperationException("Contains method not found");
+            var toLowerMethod = typeof(string).GetMethod("ToLower", new Type[] { })
+                ?? throw new InvalidOperationException("ToLower method not found");
 
-            var availableFieldNames = typeof(BaseGeoEntity)
+            var availableFieldNames = typeof(BaseAdministrativeGeoEntity)
                 .GetProperties(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public)
                 .Select(x => x.Name)
                 .Where(x => x.StartsWith("Name"))
@@ -57,14 +59,15 @@ namespace GeoHelp.Core.Services.Impl
             foreach (var fieldName in fieldNames)
             {
                 var property = Expression.Property(parameter, fieldName);
-                var containsCall = Expression.Call(property, containsMethod, Expression.Constant(query));
+                var toLowerCall = Expression.Call(property, toLowerMethod);
+                var containsCall = Expression.Call(toLowerCall, containsMethod, Expression.Constant(query.ToLower()));
 
                 predicateBody = predicateBody == null
                     ? containsCall
                     : Expression.Or(predicateBody, containsCall);
             }
 
-            var predicate = Expression.Lambda<Func<BaseGeoEntity, bool>>(
+            var predicate = Expression.Lambda<Func<BaseAdministrativeGeoEntity, bool>>(
                 predicateBody ?? throw new InvalidOperationException("Predicate should not be empty"),
                 parameter);
 

@@ -1,6 +1,6 @@
 ﻿namespace GeoHelp.Core.Entities
 {
-    public class City : BaseGeoEntity
+    public class City : BaseAdministrativeGeoEntity
     {
 
     }

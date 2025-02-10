@@ -1,6 +1,6 @@
 ﻿namespace GeoHelp.Core.Entities
 {
-    public class Country : BaseGeoEntity
+    public class Country : BaseAdministrativeGeoEntity
     {
     }
 }

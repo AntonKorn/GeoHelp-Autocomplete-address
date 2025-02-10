@@ -1,6 +1,6 @@
 ﻿namespace GeoHelp.SeedContracts
 {
-    public class GeoEntity
+    public class AdministrativeGeoEntity
     {
         public string Id { get; set; }
 
@@ -20,7 +20,7 @@
 
         public string? NameRU { get; set; }
 
-        public GeoEntity(
+        public AdministrativeGeoEntity(
             string id,
             string countryCode,
             string? name,

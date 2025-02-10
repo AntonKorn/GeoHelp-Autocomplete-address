@@ -4,8 +4,8 @@ namespace GeoHelp.Core.Services
 {
     public interface IGeoEntitySearchService
     {
-        IQueryable<BaseGeoEntity> Query(
-            IQueryable<BaseGeoEntity> baseQuery,
+        IQueryable<BaseAdministrativeGeoEntity> Query(
+            IQueryable<BaseAdministrativeGeoEntity> baseQuery,
             int skip,
             int take,
             string[] searchLocales,
