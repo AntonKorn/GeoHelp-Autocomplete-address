@@ -117,7 +117,6 @@ using (var scope = services.CreateScope())
         && seederOptions.CountryCodesSeedAddresses.Any())
     {
         context.Get<Street>().Indexes.DropAll();
-        context.Get<Building>().Indexes.DropAll();
 
         foreach (var countryCode in seederOptions.CountryCodesSeedAddresses)
         {
@@ -126,6 +125,12 @@ using (var scope = services.CreateScope())
                 stopwatch.Restart();
 
                 var streetsDocument = File.ReadAllText(streetFile).FromStreetsDocumentJson();
+
+                var buildingFile = Path.Combine($"Seeds/addresses/{countryCode}", $"{streetsDocument.CityId}-buildings.json");
+
+                var filename = Path.GetFileName(buildingFile);
+
+                var buildingEntities = File.ReadAllText(buildingFile).FromBuildingsDocumentJson();
 
                 context.Get<Street>().DeleteMany(
                     Builders<Street>.Filter.And(
@@ -148,41 +153,31 @@ using (var scope = services.CreateScope())
                             NameES = x.NameES,
                             NameFR = x.NameFR,
                             NameIT = x.NameIT,
-                        }));
-                }
+                            Buildings = buildingEntities
+                                .Where(building => building.StreetId == x.Id)
+                                .Select(building =>
+                                {
+                                    var houseNumberFigureMatch = Regex.Match(building.HouseNumber, @"\d+");
+                                    var houseNumberFigure = 0;
 
-                var buildingFile = Path.Combine($"Seeds/addresses/{countryCode}", $"{streetsDocument.CityId}-buildings.json");
+                                    if (houseNumberFigureMatch.Success)
+                                    {
+                                        houseNumberFigure = int.Parse(houseNumberFigureMatch.Value);
+                                    }
 
-                var filename = Path.GetFileName(buildingFile);
-
-                var buildingEntities = File.ReadAllText(buildingFile).FromBuildingsDocumentJson();
-
-                context.Get<Building>().DeleteMany(Builders<Building>.Filter.Eq(building => building.CityId, streetsDocument.CityId));
-
-                foreach (var buildingsChunk in buildingEntities.Chunk(500))
-                {
-                    context.Get<Building>().InsertMany(
-                        buildingsChunk.Select(x =>
-                        {
-                            var houseNumberFigureMatch = Regex.Match(x.HouseNumber, @"\d+");
-                            var houseNumberFigure = 0;
-
-                            if (houseNumberFigureMatch.Success)
-                            {
-                                houseNumberFigure = int.Parse(houseNumberFigureMatch.Value);
-                            }
-
-                            return new Building()
-                            {
-                                Id = Guid.NewGuid(),
-                                OsmId = x.Id,
-                                CityId = streetsDocument.CityId,
-                                HouseNumber = x.HouseNumber,
-                                HouseNumberMainComponent = houseNumberFigure,
-                                Latitude = x.Latitude,
-                                Longitude = x.Longitude,
-                                StreetId = x.StreetId,
-                            };
+                                    return new
+                                    {
+                                        HouseNumberMainComponent = houseNumberFigure,
+                                        BuildingItem = new Building()
+                                        {
+                                            HouseNumber = building.HouseNumber,
+                                            OsmId = building.Id,
+                                        },
+                                    };
+                                })
+                                .OrderBy(x => x.HouseNumberMainComponent)
+                                .ThenBy(x => x.BuildingItem.HouseNumber)
+                                .Select(x => x.BuildingItem),
                         }));
                 }
 
@@ -191,7 +186,6 @@ using (var scope = services.CreateScope())
         }
 
         AddStreetIndexes(context);
-        AddBuildingIndexes(context);
     }
 
     stopwatch.Stop();
@@ -206,22 +200,6 @@ void AddStreetIndexes(DataContext context)
     context.Get<Street>().Indexes.CreateMany(new CreateIndexModel<Street>[]
     {
         new CreateIndexModel<Street>(ascendingCityId),
-    });
-}
-
-void AddBuildingIndexes(DataContext context)
-{
-    var ascendingCityId = Builders<Building>.IndexKeys.Ascending(x => x.CityId);
-    var ascendingStreetId = Builders<Building>.IndexKeys.Ascending(x => x.StreetId);
-    var ascendingOsmId = Builders<Building>.IndexKeys.Ascending(x => x.OsmId);
-    var ascendingHouseNumber = Builders<Building>.IndexKeys.Ascending(x => x.HouseNumber);
-
-    context.Get<Building>().Indexes.CreateMany(new CreateIndexModel<Building>[]
-    {
-        new CreateIndexModel<Building>(ascendingCityId),
-        new CreateIndexModel<Building>(ascendingStreetId),
-        new CreateIndexModel<Building>(ascendingOsmId),
-        new CreateIndexModel<Building>(ascendingHouseNumber),
     });
 }
 

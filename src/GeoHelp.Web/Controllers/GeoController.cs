@@ -2,8 +2,9 @@
 using GeoHelp.Core.Entities;
 using GeoHelp.Core.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace GeoHelp.Controllers
 {
@@ -115,26 +116,56 @@ namespace GeoHelp.Controllers
 
             ArgumentNullException.ThrowIfNull(streetId, nameof(streetId));
 
-            var buildingsQuery = _dataContext
-                .Get<Building>()
-                .AsQueryable()
-                .Where(building => building.StreetId == streetId);
+            var pipeline = new List<BsonDocument>()
+            {
+                new BsonDocument("$match", new BsonDocument(nameof(Street.OsmId), streetId))
+            };
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                buildingsQuery = buildingsQuery
-                    .Where(building =>
-                        building.HouseNumber != null
-                        && building.HouseNumber.Contains(searchTerm));
+                pipeline.Add(new BsonDocument("$project", new BsonDocument
+                {
+                    {  nameof(Street.Buildings), new BsonDocument
+                        {
+                            { "$filter", new BsonDocument
+                                {
+                                    { "input", $"${nameof(Street.Buildings)}" },
+                                    { "as", "building" },
+                                    { "cond", new BsonDocument
+                                        {
+                                            { "$regexMatch", new BsonDocument
+                                                {
+                                                    { "input", $"$$building.{nameof(Building.HouseNumber)}" },
+                                                    { "regex", searchTerm },
+                                                    { "options", "i" } // Case-insensitive match
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }));
             }
 
-            var result = buildingsQuery
-                .OrderBy(building => building.HouseNumberMainComponent)
-                .ThenBy(building => building.HouseNumber)
-                .Skip(skip)
-                .Take(take);
+            pipeline.Add(new BsonDocument("$project", new BsonDocument
+                {
+                    { nameof(Street.Buildings), new BsonDocument
+                        {
+                            { "$slice", new BsonArray { $"${nameof(Street.Buildings)}", skip, take } }
+                        }
+                    }
+                }));
 
-            return Ok(result);
+            var foundStreet = _dataContext.Get<Street>().Aggregate<Street>(pipeline).FirstOrDefault();
+
+            if (foundStreet is null)
+            {
+                throw new InvalidOperationException("The street was not found");
+            }
+
+            return Ok(foundStreet.Buildings);
         }
 
         private void ValidateWindowSize(int _, int take)
