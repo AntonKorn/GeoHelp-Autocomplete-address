@@ -48,7 +48,7 @@ You can easily deploy this application using conditionally free resources like h
 
 http://geohelp.somee.com/swagger/index.html
 
-The application is deployed under this url. The deployment is free, therefore it is significantly throttled
+The application is deployed under this url. The deployment is free, therefore it is significantly throttled. Only Belarus, Poland, Latvia are seeded for this deployment
 
 ## How can I get Latitude and Longitude of the house?
 
